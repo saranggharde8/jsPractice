@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="output">
+
+        </div>
+        <script>
+            var output = document.getElementById("output");
+            var question = prompt("guess head or tail");
+            var user_ans = question == "head" ? (1) :(0);
+       
+            var comp_ans = Math.floor(Math.random()*2);
+            console.log(comp_ans);
+            if(user_ans == comp_ans)
+            {
+                output.innerHTML= "Your answer is wright";
+            }
+            else
+            {
+                output.innerHTML = "Your answer in wrong";
+            }
+        </script>
+    </body>
+</html>
