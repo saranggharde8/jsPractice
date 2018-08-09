@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            game
+        </title>
+    </head>
+    <body>
+        <div id="output">
+            
+        </div>
+        <script>
+            var comp_ans;
+            var output = document.getElementById("output");
+            var input = prompt("choose Rock Paper or Scissor");
+            var ps = input.charAt(0).toUpperCase();
+            var random = Math.random();
+            if(random <= 0.34)
+            {
+                comp_ans = "Rock";
+            }
+            else if(random >0.34 &&  random <= 0.68)
+            {
+                comp_ans = "Paper";
+            }
+            else
+            {
+                comp_ans = "Scissor";
+            }
+            var cs = comp_ans.charAt(0).toUpperCase(); 
+            var result ="";
+            if(ps == cs)
+            {
+                result = "IT'S TIE";
+            }
+            else if(ps=="R" && cs== "P")
+            {
+                result="PAPER WIN";
+            }
+            else if(ps=="R" && cs== "S")
+            {
+                result ="ROCK WIN";
+            }
+            else if(ps=="S" && cs=="R")
+            {
+                result = "ROCK WIN";
+            }
+            else if(ps=="S" && cs=="P")
+            {
+                result = "SCISSOR WIN";
+            }
+            else if(ps=="P" && cs=="R")
+            {
+                result = "PAPER WIN";
+            }
+            else if(ps=="P" && cs=="S")
+            {
+                result = "SCISSOR WIN";
+            }
+            else
+            {
+                result = "something problem in code";
+            }
+            
+            output.innerHTML="<b>"+input+"</b>"+" <i>vs</i> "+"<b>"+ comp_ans +"</b>"+"<h1>"+result+"</h1>";
+
+        </script>
+    </body>
+</html>
