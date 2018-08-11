@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="output">
+        </div>
+        <form>
+            First Name :<input type="text" id="e1" value="sarang"><br>
+            Last Name  :<input type="text" id="e2" value="Gharde"><br>
+                        <input type="button" onkeydown="sendInfo()" value="submit">
+        </form>
+        <script>
+            var output = document.getElementById("output");
+            function sendInfo()
+            {
+                //console.dir(event.target.parentElement.e1.value);
+                var parent =  event.target.parentElement;
+                massage('Welcome '+ parent.e1.value + " " + parent.e2.value);
+
+            }
+            function massage(t)
+            {
+                output.innerHTML = t;
+            }
+        </script>
+    </body>
+</html>

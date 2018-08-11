@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="output">
+        </div>
+        <form>
+            <select onchange="imgSize()">
+                <option>select size</option>
+                <option value="150x150">Small</option>
+                <option value="350x150">Mediam</option>
+                <option value="750x150">Large</option>            
+            </select>
+            Enter Text :<input type="text" id="imgText" onchange="imgSize()">
+            Select Color :<input type="color" id="imgBColor" onchange="imgSize()">
+            Select Text Color :<input type="color" id="imgTColor" onchange="imgSize()">
+        </form><br><br>
+        <img src="http://via.placeholder.com/350x150/222/fff?text=image1" id="img">
+        <script>
+            var size="350x150";
+            var textN="image1";
+            var tcolor="fff";
+            var bcolor="222";
+            function imgSize()
+            {
+                console.dir(event.target.value)
+                console.dir(event.target.type)
+            }
+            var newImg = "http://via.placeholder.com/"+size+"/"+bcolor+"/"+tcolor+"?text="+textN;
+            event.target.parentElement.img.src = newImg;
+        </script>
+    </body>
+     
+</html>
