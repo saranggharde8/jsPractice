@@ -1,1 +1,2 @@
-# jsPractce my pracice example do not be interfere!!!
+# js-practice
+my pracice example do not be interfere!!!
