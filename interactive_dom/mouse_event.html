@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mouse event</title>
+    </head>
+    <body>
+        <div id = "output">
+        </div>
+        <img src="http://via.placeholder.com/350x150/222/fff?text=image1" id="img" onmouseover="cImg(this)" onmouseout="oImg(this)"/>
+        
+        <script>
+            function cImg(t)
+            {
+                
+                t.src = "http://via.placeholder.com/350x150/ff0000/fff?text=It'schanges!!!"
+                massage(t.src);
+            }
+            function oImg(t)
+            {
+               
+                t.src = "http://via.placeholder.com/350x150/222/fff?text=image1"
+                massage(t.src);
+            }
+            function massage(m)
+            {
+                
+                document.getElementById("output").innerHTML = m; 
+            }
+        </script>
+    </body>
+</html>

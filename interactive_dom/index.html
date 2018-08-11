@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basic</title>
+    </head>
+    <body>
+        <div id="output">
+            
+        </div>
+        <a href="index1.html">index 1</a>
+        <a href="index2.html">index 2</a>
+        <a href="index3.html">index 3</a>
+        <button onclick="goback()">back</button>
+        <script>
+               /* function goback()
+                {
+                    window.history.go(-1);
+                }*/
+                var mytimer = window.setTimeout(myPopup,4000);
+                function myPopup()
+                {
+                    alert("timer has been set");
+                }
+           
+        </script>
+    </body>
+</html>

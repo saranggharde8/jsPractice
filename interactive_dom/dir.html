@@ -1,0 +1,21 @@
+<!DOCTPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="output">
+
+        </div>
+        <script>
+            var output = document.getElementById("output");
+            console.dir(window);
+            for(var prop in window)
+            {
+                output.innerHTML = prop + " : " + window[prop] +"<br>"; 
+            }
+        </Script>
+    </body>
+</html>

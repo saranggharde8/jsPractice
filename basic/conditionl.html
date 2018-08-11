@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>condition statement</title>
+    </head>
+    <body>
+        <div id="output">
+
+        </div>
+        <script>
+            var output = document.getElementById("output");
+            var user_names=["sarang","gaurav","ankush","vaibahv"];
+            var user_name = prompt("enter username");
+            var user_name_index = user_names.indexOf(user_name);
+            var user_name_check = user_name_index > -1 ? true :false;
+            user_name_check == true ? (output.innerHTML=" <h2>welcome</h2> "+"<h2> "+user_name +"</h2>") : 
+                                      (output.innerHTML=" <h2> dined </h2> "+"<h2> " + user_name + "</h2>");
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTPE html>
+<html>
+    <head>
+        <title>TIME OUT</title>
+    </head>
+    <body>
+        <div id="output">
+        </div>
+        <button onclick="end()">end interval</button>
+           <h1>Time out interval</h1>
+           <script>
+               var timer;
+                var output = document.getElementById("output");
+                    timer = window.setInterval(myPopup,4000);
+                function myPopup()
+                {
+                    output.innerHTML = "Welcome to my website";
+                }
+                function end()
+                {
+                    window.clearInterval(timer);
+                }
+            </script> 
+    </body>
+</html>

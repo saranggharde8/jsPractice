@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            element remove
+        </title>
+
+    </head>
+    <body>
+        <div id="output">
+
+        </div>
+        <script>
+            var list=[2,33,12,9,4783,11,"sarng","hello"];
+            var sorted_list=list.sort();
+            console.log(sorted_list);
+            var user_input=parseInt(prompt("which element you want to delete"));
+            var list_index=sorted_list.indexOf(user_input);
+            var new_list=sorted_list.splice(list_index,1);
+            console.log(list);
+        </script>
+    </body>
+</html>
