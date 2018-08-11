@@ -1,9 +1,9 @@
 <!-- HTML  page-->
-<!DOCTYPE h
-tml>
+<!DOCTYPE html>
 <html>
     <head>
         <title>mouse event</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <div id = "output">
@@ -11,6 +11,9 @@ tml>
         <img src="http://via.placeholder.com/350x150/222/fff?text=image1" id="img" onmouseover="cImg(this)" onmouseout="oImg(this)"/>
         
         <script>
+            //sweet alert
+            swal("Good job!", "Page has been loaded", "success");
+
             function cImg(t)
             {
                 
@@ -28,6 +31,7 @@ tml>
                 
                 document.getElementById("output").innerHTML = m; 
             }
+
         </script>
     </body>
 </html>
